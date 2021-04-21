@@ -8,3 +8,13 @@ D:\faculta\an_2_sem_2\SGBD\laburi\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.cspro
 D:\faculta\an_2_sem_2\SGBD\laburi\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.exe
 D:\faculta\an_2_sem_2\SGBD\laburi\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.pdb
 D:\faculta\an_2_sem_2\SGBD\laburi\lab\lab_SGBD\lab_SGBD\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\bin\Debug\lab_SGBD.exe.config
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\bin\Debug\lab_SGBD.exe
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\bin\Debug\lab_SGBD.pdb
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.csprojAssemblyReference.cache
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.Properties.Resources.resources
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.csproj.GenerateResource.cache
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.csproj.CoreCompileInputs.cache
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.exe
+D:\faculta\an_2_sem_2\SGBD\laburi\lab2\SGBD\lab\lab_SGBD\lab_SGBD\obj\Debug\lab_SGBD.pdb
