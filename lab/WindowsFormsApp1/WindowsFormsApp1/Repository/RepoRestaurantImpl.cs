@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using WindowsFormsApp1.models;
 
@@ -8,35 +9,22 @@ namespace WindowsFormsApp1.Repository
     public class RepoRestaurantImpl : IRepoRestaurant
     {
         private SqlConnection connection;
+        private DataSet ds;
 
-        public RepoRestaurantImpl()
+        public RepoRestaurantImpl(DataSet dataSet)
         {
             connection = new SqlConnection(
                 "Data Source=DESKTOP-KGSJIFP\\SQLEXPRESS;Initial Catalog=Restaurant;Integrated Security=True");
+            ds = dataSet;
         }
 
 
-        public List<Restaurant> getAll()
+        public void getAll()
         {
-            List<Restaurant> restaurants=new List<Restaurant>();
-            
-            connection.Open();
-            SqlCommand command = new SqlCommand("SELECT * FROM Locatii", connection);
-            using (SqlDataReader reader = command.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    Restaurant restaurant = new Restaurant()
-                    {
-                        ID = (int)reader[0],
-                        Adresa = (string)reader[1]
-                    };
-                    restaurants.Add(restaurant);
-                }
-            }
-
-            connection.Close();
-            return restaurants;
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = new SqlCommand("SELECT * FROM Locatii", connection);
+            ds.Clear();
+            da.Fill(ds,"Locatii");
         }
     }
 }

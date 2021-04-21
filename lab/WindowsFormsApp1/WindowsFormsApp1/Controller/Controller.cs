@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data;
 using WindowsFormsApp1.models;
 using WindowsFormsApp1.Service;
 
@@ -7,25 +8,27 @@ namespace WindowsFormsApp1.Controller
     public class Controller
     {
         private IService _service;
+        public DataSet _dataSet { get; }
 
-        public Controller(IService service)
+        public Controller(IService service,DataSet dataSet)
         {
             _service = service;
+            _dataSet = dataSet;
         }
 
-        public List<Restaurant> getAllRestaurants()
+        public void getAllRestaurants()
         {
-            return _service.getAllRestaurants();
+            _service.getAllRestaurants();
         }
 
-        public List<Angajat> getAngajatiOfRestaurant(Restaurant restaurant)
+        public void getAngajatiOfRestaurant(Restaurant restaurant)
         {
-            return _service.getAllAngajatiOfRestaurant(restaurant);
+            _service.getAllAngajatiOfRestaurant(restaurant);
         }
 
-        public void addAngajat(int angajatID,string numeAngajat,string functie,int salariu,Restaurant restaurant)
+        public void addAngajat(int angajatID, string numeAngajat, string functie, int salariu, Restaurant restaurant)
         {
-            Angajat angajat=new Angajat()
+            Angajat angajat = new Angajat()
             {
                 functie = functie,
                 Nume = numeAngajat,

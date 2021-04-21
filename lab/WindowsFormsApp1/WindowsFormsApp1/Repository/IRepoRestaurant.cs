@@ -5,7 +5,7 @@ namespace WindowsFormsApp1.Repository
 {
     public interface IRepoRestaurant
     { 
-        List<Restaurant> getAll();
+        void getAll();
         
     }
 }

@@ -5,7 +5,7 @@ namespace WindowsFormsApp1.Repository
 {
     public interface IRepoAngajat
     {
-        List<Angajat> getAllAngajatiOfRestaurant(Restaurant restaurant);
+        void getAllAngajatiOfRestaurant(Restaurant restaurant);
 
         void update(Angajat updatedAngajat);
         

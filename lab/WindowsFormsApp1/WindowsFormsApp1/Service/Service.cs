@@ -15,14 +15,14 @@ namespace WindowsFormsApp1.Service
             _repoRestaurant = repoRestaurant;
         }
 
-        public List<Restaurant> getAllRestaurants()
+        public void getAllRestaurants()
         {
-            return _repoRestaurant.getAll();
+            _repoRestaurant.getAll();
         }
 
-        public List<Angajat> getAllAngajatiOfRestaurant(Restaurant restaurant)
+        public void getAllAngajatiOfRestaurant(Restaurant restaurant)
         {
-            return _repoAngajat.getAllAngajatiOfRestaurant(restaurant);
+            _repoAngajat.getAllAngajatiOfRestaurant(restaurant);
         }
 
         public void addAngajat(Angajat angajat)

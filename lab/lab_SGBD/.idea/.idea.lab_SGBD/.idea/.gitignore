@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.lab_SGBD.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\faculta\an_2_sem_2\SGBD\laburi\lab\lab_SGBD\.idea\.idea.lab_SGBD\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

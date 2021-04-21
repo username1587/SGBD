@@ -44,12 +44,14 @@ namespace WindowsFormsApp1
             //     }
             // }
 
-            IRepoRestaurant repoRestaurant=new RepoRestaurantImpl();
+            DataSet ds = new DataSet();
+            
+            IRepoRestaurant repoRestaurant=new RepoRestaurantImpl(ds);
             IRepoAngajat repoAngajat=new RepoAngajatImpl();
 
             IService service = new Service.Service(repoAngajat,repoRestaurant);
 
-            Controller.Controller controller = new Controller.Controller(service);
+            Controller.Controller controller = new Controller.Controller(service,ds);
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -5,9 +5,9 @@ namespace WindowsFormsApp1.Service
 {
     public interface IService
     {
-        List<Restaurant> getAllRestaurants();
+        void getAllRestaurants();
 
-        List<Angajat> getAllAngajatiOfRestaurant(Restaurant restaurant);
+        void getAllAngajatiOfRestaurant(Restaurant restaurant);
 
         /**
          * throws ValidationException

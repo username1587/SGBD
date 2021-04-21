@@ -33,7 +33,8 @@ namespace WindowsFormsApp1
 
         private void loadRestauranteDataGriedView()
         {
-            restaurantDataGriedView.DataSource = _controller.getAllRestaurants();
+            _controller.getAllRestaurants();
+            restaurantDataGriedView.DataSource = _controller._dataSet.Tables[0];
         }
 
         private void loadAngajatiDataGriedView()
@@ -50,9 +51,9 @@ namespace WindowsFormsApp1
 
         private void loadRestaurantFields()
         {
-            var item = (Restaurant) restaurantDataGriedView.SelectedRows[0].DataBoundItem;
-            restaurantIdTextField.Text = item.ID.ToString();
-            adresaRestaurantTextField.Text = item.Adresa;
+            // var item = (Restaurant) restaurantDataGriedView.SelectedRows[0].DataBoundItem;
+            // restaurantIdTextField.Text = item.ID.ToString();
+            // adresaRestaurantTextField.Text = item.Adresa;
         }
 
         private void loadAngajatiFields()
